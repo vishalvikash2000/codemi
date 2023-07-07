@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,41,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.firstchild {
+ position: absolute; top: -22px; left:85px;
+ font-size: 30px;text-shadow: 3px 2px purple;
+
+ 
+}
+
+.secondchild {
+ position: absolute; top: 30px; 
+left:70px;font-size: 30px;
+text-shadow: 3px 2px purple;
+ 
+}
+
+.thirdchild {
+position: absolute; top: 70px; left:30px;
+font-size: 30px;text-shadow: 3px 2px purple;
+
+ 
+}
+
+h1{
+  position: absolute; top: 70px; left:230px;
+  font-size: 80px;text-shadow: 3px 2px purple;
+  animation-name: fadeout;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+  
+@keyframes fadeout{
+   from{top: -80px;opacity: 0.2;}
+    to{top: 50px;}
+    
+}
+
+hr.line{
+  border: 2px solid black;
+  box-shadow: 3px 2px purple;
+}
+
+#Search{
+    position: absolute; top: 210px; left:150px;
+    width: 600px; height: 40px;
+     border: 2px soild black; outline: none; border-bottom: 3px solid black;
+     background: transparent; font-size: 20px; border-radius:18px; box-shadow: 2px 2px 4px purple;
+}
+
+#Search:hover{
+    position: absolute; top: 210px; left:40px;
+    width: 900px; height: 40px;
+     border: 2px soild black; outline: none; 
+     background: transparent; font-size: 20px; 
+     box-shadow: 2px 2px 4px 2px purple;
+}
+
+::placeholder {
+       text-shadow: 3px 2px purple;
+       text-align: center;   
+}
+
+.one{
+  border: 2px solid black;
+  width: 650px;height: 300px; position: absolute; top: 410px; left:120px;
+  box-shadow: 3px 2px purple; border-radius:19px; font-size: 10px;
+}
+
+.pageone{
+  position: relative; top: 250px; font-size: 30px;
+  text-decoration: underline;
+}
+
+.pagetwo{
+  position: relative; top: 450px; font-size: 30px;
+  text-decoration: underline;
+}
+
+
+.linetwo{ 
+   border: 2px solid purple;
+   position: relative; top: 450px;
+   width: 1000px;
+   }
+
+.adjust{
+   width: 300px; height: 300px;
+   position: absolute;top: 700px;left:700px;
+}
+
+a{
+ color: black;text-shadow: 3px 2px purple;
+}
+
+a:hover{
+   color: black;text-shadow: 3px 2px purple;
+}
+
+#popup{
+  background: black; color: white;
+}
+
+</style>
+<script>
+function myhome() {
+  window.open("https://www.google.com","_self")
+}
+function myuser() {
+  window.open("https://www.google.com","_self")
+}
+function mycontact() {
+  window.open("https://www.google.com","_self")
+}
+</script>
+</head>
+<body>
+
+<details>
+<summary style="display: block;"> <i class="fa fa-cog fa-spin" style="font-size: 38px;text-shadow: 3px 2px purple;"></i> </summary> 
+ <p class="firstchild" onmouseover="myhome()"><i class="fa fa-home"></i> </p>
+<p class="secondchild" onmouseover="myuser()"> <i class="fa fa-user"> </i> </p>
+<p class="thirdchild" onmouseover="mycontact()"> <i class="fa fa-phone"> </i></p>
+
+</details>
+<h1><i class="fa fa-code"></i> FRONTEND CODES <i class="fa fa-code"></i>  <hr class="line"> <h1>
+
+<p class="pageone"> TOOLTIP </p>
+
+<textarea disabled 
+ style=" box-shadow: 3px 2px purple; border-radius: 16px;background-color:black;color: white;position: absolute; top:350px; width: 500px; height: 200px;" >
+
+ <html> 
+
+<head> <title> popup </title> </head>
+
+<body>
+
+<button popovertarget="popup"> SLIDER</button>
+
+<div id="popup" popover> TOOLTIP (HTML CODE) </div>
+
+</body>
+
+</html>
+
+</textarea> 
+<p style="position: absolute; top: 250; left: 800px; font-size: 30px;text-decoration: underline;"> OUTPUT<p>
+<button style="position: absolute; top:400px; left: 800px; " popovertarget="popup"> RESULT</button>
+<div id="popup" style="position: absolute; top:600px; left: 800px;font-size: 30px; " popover> OUTPUT TOOLTIP</div>
+<hr class="linetwo">
+<p class="pagetwo"> HOVER VIDEO PLAY/PAUSE </p>
+
+<textarea disabled 
+ style=" box-shadow: 3px 2px purple; border-radius: 16px; background-color:black;color: white;position: absolute; top:730px; width: 500px; height: 200px;">
+
+<html>
+
+<head><title> hover video play & pause</title></head>
+
+<body>
+
+<video src=" ...path" loop = 1 onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
+
+</video>
+
+</body>
+
+</html>
+
+</textarea>
+
+<p style="position: absolute; top: 620; left: 800px; font-size: 30px;text-decoration: underline;"> OUTPUT<p>
+
+<video class="adjust" src="C:\Users\renu devi\OneDrive\Desktop\html file\webproject\horse running.webm" loop = 1 onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;">
+
+</video>
+</body>
+</html>
