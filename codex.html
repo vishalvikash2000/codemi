@@ -1,0 +1,42 @@
+<html>
+<head>
+ <h1> ENTERTAINMENT </h1> 
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <input type = "text" id="myInput" onkeyup= "myFunction()" placeholder= "search movies.." title = "" >
+<ul id="myUL">
+  <li><a href="display.html"><img src="https://th.bing.com/th?id=ONUT.GhehJ6HXkk2KKndSewofag&pid=News&w=367&h=200&c=14&rs=2&qlt=90&dpr=1.5" alt= "DHURANDHAR 2"> <br> dhurandhar the revenge </br> </a></li>
+  
+   <li><a href="https://hubcloud.foo/drive/qqvxqq8vqqfqqzf"> <img src="https://www.superherohype.com/wp-content/uploads/sites/4/2026/05/spider-noir-1.jpg?w=819" alt= "SPIDER NOIR"> <br> spider-noir </br> </a></li>
+
+  <li><a href="https://hubcdn.sbs/dl/?link=https://hub.obsession.buzz/add018e9e052103fcea167dd0ab820be"> <img src="https://m.media-amazon.com/images/M/MV5BYzc1NWUwMDgtNGZlMS00ZmYzLWIzMzktNmMxMmY1MTUzNWExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt= "obsession">obsession </a></li>
+
+  <li><a href="https://hubcloud.foo/drive/7iju7mrqm0rii0j"><img src="https://tse4.mm.bing.net/th/id/OIF.0iZXRYeA2xaZopkFcWBUpQ?rs=1&pid=ImgDetMain&o=7&rm=3" alt= "made in india titan story"> <br> made in india titan story </br>  </a></li>
+
+  <li><a href="#"> Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
